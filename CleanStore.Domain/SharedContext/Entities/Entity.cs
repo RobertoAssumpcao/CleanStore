@@ -1,4 +1,6 @@
-﻿namespace CleanStore.Domain.SharedContext.Entities;
+﻿using CleanStore.Domain.SharedContext.Events.Abstractions;
+
+namespace CleanStore.Domain.SharedContext.Entities;
 
 public abstract class Entity(int id) : IEquatable<int>, IEquatable<Entity>
 {
