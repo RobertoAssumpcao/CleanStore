@@ -1,5 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 using CleanStore.Domain.AccountContext.Exceptions;
+using CleanStore.Domain.SharedContext.Extensions;
 using CleanStore.Domain.SharedContext.ValueObjects;
 
 namespace CleanStore.Domain.AccountContext.ValueObjects;
