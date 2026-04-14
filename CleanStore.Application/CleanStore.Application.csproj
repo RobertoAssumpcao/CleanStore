@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="AccountContext\" />
+      <Folder Include="AccountContext\UseCases\" />
       <Folder Include="SharedContext\" />
     </ItemGroup>
 
