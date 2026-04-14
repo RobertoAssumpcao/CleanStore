@@ -1,3 +1,6 @@
 <Solution>
   <Project Path="CleanStore.Api/CleanStore.Api.csproj" />
+  <Project Path="CleanStore.Application/CleanStore.Application.csproj" />
+  <Project Path="CleanStore.Domain/CleanStore.Domain.csproj" />
+  <Project Path="CleanStore.Infrastructure/CleanStore.Infrastructure.csproj" />
 </Solution>
