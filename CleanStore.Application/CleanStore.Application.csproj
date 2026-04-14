@@ -6,4 +6,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="AccountContext\" />
+      <Folder Include="SharedContext\" />
+    </ItemGroup>
+
 </Project>
