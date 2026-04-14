@@ -9,7 +9,6 @@
     <ItemGroup>
       <Folder Include="AccountContext\Entities\" />
       <Folder Include="AccountContext\ValueObjects\" />
-      <Folder Include="SharedContext\Entities\" />
     </ItemGroup>
 
 </Project>
