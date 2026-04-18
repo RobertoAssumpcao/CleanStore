@@ -1,6 +1,5 @@
-﻿namespace CleanStore.Application.AccountContext.UseCases.Create;
+﻿using CleanStore.Application.SharedContext.UseCases.Abstractions;
 
-public class Response
-{
-    
-}
+namespace CleanStore.Application.AccountContext.UseCases.Create;
+
+public sealed record Response(int id, string email) : ICommandResponse;
