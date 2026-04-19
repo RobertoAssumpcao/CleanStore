@@ -11,7 +11,7 @@ public class AccountMap : IEntityTypeConfiguration<Account>
     {
         #region Table and Primary Key
 
-        builder .ToTable("Account");
+        builder.ToTable("Account");
 
         builder
             .HasKey(x => x.Id)
