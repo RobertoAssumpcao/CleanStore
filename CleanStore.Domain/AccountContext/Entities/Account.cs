@@ -14,10 +14,8 @@ public sealed class Account : Entity, IAggregateRoot
     }
 
     private Account(
-        int id,
-        Email email) : base(id)
+        Email email) : base(0)
     {
-
         Email = email;
     }
 
@@ -25,14 +23,13 @@ public sealed class Account : Entity, IAggregateRoot
 
     #region Factories
 
-    public static Account Create(int id, Email email)
+    public static Account Create(Email email)
     {
-        var account = new Account(id, email);
-        account.RaiseDomainEvent(new OnAccountCreatedEvent(id, email));
+        var account = new Account(email);
+        account.RaiseDomainEvent(new OnAccountCreatedEvent(email));
 
         return account;
     }
-    
     #endregion
     
     #region Properties
