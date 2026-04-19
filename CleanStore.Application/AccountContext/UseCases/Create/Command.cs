@@ -2,4 +2,4 @@
 
 namespace CleanStore.Application.AccountContext.UseCases.Create;
 
-public sealed record Command(string Email) : ICommand<ICommandResponse>;
+public sealed record Command(string Email) : ICommand<Response>;
