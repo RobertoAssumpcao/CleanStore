@@ -1,5 +1,6 @@
 ﻿using CleanStore.Domain.AccountContext.Events;
 using CleanStore.Domain.AccountContext.ValueObjects;
+using CleanStore.Domain.SharedContext.AggregateRoots.Abstractions;
 using CleanStore.Domain.SharedContext.Entities;
 
 namespace CleanStore.Domain.AccountContext.Entities;

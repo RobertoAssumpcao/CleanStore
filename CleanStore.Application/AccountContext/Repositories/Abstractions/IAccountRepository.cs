@@ -1,4 +1,5 @@
-﻿using CleanStore.Domain.AccountContext.Entities;
+﻿using CleanStore.Application.SharedContext.Repositories.Abstractions;
+using CleanStore.Domain.AccountContext.Entities;
 
 namespace CleanStore.Application.AccountContext.Repositories.Abstractions;
 
