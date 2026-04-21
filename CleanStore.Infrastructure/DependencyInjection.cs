@@ -1,5 +1,7 @@
 ﻿using CleanStore.Application.AccountContext.Repositories.Abstractions;
 using CleanStore.Application.SharedContext.Repositories.Abstractions;
+using CleanStore.Infrastructure.AccountContext.Repositories;
+using CleanStore.Infrastructure.SharedContext.Data;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CleanStore.Infrastructure;
