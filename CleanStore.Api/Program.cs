@@ -23,4 +23,13 @@ app.MapPost("/v1/accounts", async (
     return TypedResults.Created($"v1/accounts/{result.Value.Id}", result);
 });
 
+app.MapGet("/v1/accounts/{id:int}", async (
+    ISender sender,
+    int id) =>
+{
+    var query = new CleanStore.Application.AccountContext.UseCases.Get.Query(id);
+    var result = await sender.Send(query);
+    return TypedResults.Ok(result);
+});
+
 app.Run();

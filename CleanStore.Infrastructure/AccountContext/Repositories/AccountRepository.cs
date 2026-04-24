@@ -15,9 +15,14 @@ public class AccountRepository(AppDbContext context) : IAccountRepository
         => await context.Accounts.AddAsync(account);
 
     public async Task<Account?> GetByIdAsync(GetByIdSpecification specification) 
-        => await context
+    {
+        ArgumentNullException.ThrowIfNull(specification);
+        ArgumentNullException.ThrowIfNull(specification.Criteria);
+
+        return await context
             .Accounts
             .AsNoTracking()
             .Where(specification.Criteria)
             .FirstOrDefaultAsync();
+    }
 }
