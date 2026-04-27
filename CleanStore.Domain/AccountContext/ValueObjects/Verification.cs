@@ -7,8 +7,8 @@ public sealed partial record Verification : ValueObject
 {
     #region Constants
     // Metadados estáticos usados para geração e expiração do código.
-    public const int CodeLength = 6;
-    public const int ExpirationInHours = 5;
+    private const int CodeLength = 6;
+    private const int ExpirationInHours = 5;
     #endregion
 
     #region Constructors
